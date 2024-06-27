@@ -18,7 +18,7 @@ app.use(morgan('dev'));
 app.use(cors());
 
 app.use(cors({
-    origin: ['https://kkem-blog-test-mern-client-130cby4ua-jayces-projects-f5b147c5.vercel.app'],
+    origin: ['https://kkem-blog-test-mern-client-j2hqhzkue-jayces-projects-f5b147c5.vercel.app'],
     credentials: true,
     methods: ['POST', 'GET']
   }));
