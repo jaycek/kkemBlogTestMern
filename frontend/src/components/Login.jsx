@@ -42,7 +42,7 @@ const Login = () => {
         <div>
           <TextField
             id="outlined-required"
-            label="Email"
+            label="Username"
             name="username"
             onChange={inputHandler}
           />
