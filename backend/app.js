@@ -27,5 +27,5 @@ app.use('/api',postroute);
 app.get('/*', function(req, res) { res.sendFile(path.join(__dirname ,'/build/index.html')); });
 
 app.listen(PORT,()=>{
-    console.log(`${PORT} is up and running`);
+    console.log(`${PORT} is up`);
 })
