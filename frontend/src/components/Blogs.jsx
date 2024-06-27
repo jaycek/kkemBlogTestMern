@@ -7,7 +7,7 @@ const Blogs = () => {
   const [cardData,setData]=useState([]);
   // const navigate=useNavigate();
     useEffect( ()=>{
-      axiosInstance.get('/blogs').then((res)=>{
+      axiosInstance.get('/api/blogs').then((res)=>{
        console.log(res)
       setData(...cardData,res.data);
      })

@@ -12,7 +12,7 @@ const AddBlog = () => {
   const addData = () => {
     console.log(post);
     axiosInstance
-      .post("/add", post)
+      .post("/api/add", post)
       .then((res) => {
         alert(res.data.message);
       })
