@@ -17,6 +17,10 @@ app.use(express.static(path.join(__dirname,'/build')));
 app.use(morgan('dev'));
 app.use(cors());
 
+app.use(cors({
+    origin: 'https://kkem-blog-test-mern-client-130cby4ua-jayces-projects-f5b147c5.vercel.app/'
+  }));
+
 app.use('/api',userRoute)
 app.use('/api',postroute);
 
