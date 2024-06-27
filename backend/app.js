@@ -18,7 +18,9 @@ app.use(morgan('dev'));
 app.use(cors());
 
 app.use(cors({
-    origin: 'https://kkem-blog-test-mern-client-130cby4ua-jayces-projects-f5b147c5.vercel.app'
+    origin: ['https://kkem-blog-test-mern-client-130cby4ua-jayces-projects-f5b147c5.vercel.app'],
+    credentials: true,
+    methods: ['POST', 'GET']
   }));
 
 app.use('/api',userRoute)
@@ -27,5 +29,5 @@ app.use('/api',postroute);
 app.get('/*', function(req, res) { res.sendFile(path.join(__dirname ,'/build/index.html')); });
 
 app.listen(PORT,()=>{
-    console.log(`${PORT} is up`);
+    console.log(`${PORT} is up and running`);
 })
