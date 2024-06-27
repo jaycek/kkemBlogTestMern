@@ -1,6 +1,6 @@
 import axios from 'axios';
 const axiosInstance= axios.create({
-    baseURL:'http://localhost:3005'
+    baseURL:'https://kkem-blog-test-mern-nodu-deou8gkbi-jayces-projects-f5b147c5.vercel.app'
 })
 
 axiosInstance.interceptors.request.use((config)=>{

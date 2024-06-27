@@ -12,7 +12,7 @@ const Signup = () => {
 
   const addHandler = ()=>{
     console.log("clicked",users);
-    axios.post("http://localhost:3000/api",users)
+    axios.post("https://kkem-blog-test-mern-nodu-deou8gkbi-jayces-projects-f5b147c5.vercel.app/api",users)
     .then((res)=>{
       console.log(res);
       alert(res.data.message);
