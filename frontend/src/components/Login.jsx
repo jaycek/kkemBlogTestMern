@@ -14,7 +14,7 @@ const Login = () => {
 
   const addHandler = () => {
     console.log(user);
-    axios.post("https://kkem-blog-test-mern-nodu-m2i4zmvf8-jayces-projects-f5b147c5.vercel.app/api/login",user)
+    axios.post("https://https://kkem-blog-test-mern-nodu.vercel.app/api/login",user)
     .then((res)=>{
       alert(res.data.message);
       sessionStorage.setItem('userToken',res.data.token);
